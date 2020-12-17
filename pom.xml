@@ -152,11 +152,8 @@
                     </includes>
 
                     <!-- <excludes> <exclude>**/*RunCukesTest.java</exclude> </excludes> -->
-
-                    <!--  <parallel>methods</parallel>
-                      <threadCount>4</threadCount>
-                      <perCoreThreadCount>false</perCoreThreadCount>-->
-
+                        <parallel>methods</parallel>
+                        <threadCount>4</threadCount>
                 </configuration>
                 <dependencies>
                     <dependency>

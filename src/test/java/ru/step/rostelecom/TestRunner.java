@@ -20,15 +20,15 @@ public class TestRunner {
 
         TestConfig cfg = ConfigFactory.create(TestConfig.class);
 
-        Configuration.remote = String.format("http://%s:%d%s", cfg.selenoidHost(), cfg.selenoidPort(), cfg.selenoidPath());
-       // System.out.println(Configuration.remote);
-        Configuration.browser = cfg.selenoidBrowser();
-        Configuration.browserVersion = cfg.selenoidBrowserVersion();
-        Configuration.browserSize = cfg.selenoidBrowserSize();
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", false);
-        Configuration.browserCapabilities = capabilities;
+//        Configuration.remote = String.format("http://%s:%d%s", cfg.selenoidHost(), cfg.selenoidPort(), cfg.selenoidPath());
+//       // System.out.println(Configuration.remote);
+//        Configuration.browser = cfg.selenoidBrowser();
+//        Configuration.browserVersion = cfg.selenoidBrowserVersion();
+//        Configuration.browserSize = cfg.selenoidBrowserSize();
+//        DesiredCapabilities capabilities = new DesiredCapabilities();
+//        capabilities.setCapability("enableVNC", true);
+//        capabilities.setCapability("enableVideo", false);
+//        Configuration.browserCapabilities = capabilities;
     }
 
     @AfterClass

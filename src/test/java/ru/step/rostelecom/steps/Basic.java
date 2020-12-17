@@ -8,14 +8,19 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class Basic {
 
-    @When("I run test step")
-    public void testStep() {
-        System.out.println("I am a test step!");
+    @When("I run test step from {string} file")
+    public void testStep(String filename) {
+        //System.out.println("I am a test step!");
+
+        System.out.format("Thread ID - %2d - from %s feature file.\n",
+                Thread.currentThread().getId(), filename);
+
     }
 
     @Given("I open yandex.ru")
     public void openYandex(){
-        open("https://yandex.ru");
+        //open("https://yandex.ru");
+
     }
 
     @And("I wait for {int} seconds")

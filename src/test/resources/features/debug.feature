@@ -1,4 +1,6 @@
 Feature: Debug Scenarios
 
   Scenario: Test Steps
-    When I run test step
+    Given I open yandex.ru
+    And I wait for 5 seconds
+    

@@ -9,6 +9,7 @@ import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.step.rostelecom.util.TestConfig;
+import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 
 @RunWith(Cucumber.class)
@@ -33,7 +34,8 @@ public class TestRunner {
 
     @AfterClass
     public static void tearDown(){
-        //System.out.println("Test teardown");
+        closeWebDriver();
+
     }
 
 }
